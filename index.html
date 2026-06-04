@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVRARIA - Histoires de tous les temps</title>
+    <link rel="stylesheet" href="./style/style.css">
+    
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <h1>LIVRARIA</h1>
+                <span class="tagline">Histoires de tous les temps</span>
+            </a>
+
+            <nav class="nav">
+                <a href="#" class="nav-link active">Accueil</a>
+                <a href="./content/livres.html" class="nav-link">Livres</a>
+            </nav>
+
+            <div class="header-icons">
+                <button class="icon-btn" aria-label="Rechercher">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="icon-btn" aria-label="Compte">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+                <button class="icon-btn" aria-label="Favoris">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </button>
+               
+            </div>
+
+            <div class="header-buttons">
+                <a href="./content/connexion.html" class="btn-connexion">Connexion</a>
+                <a href="./content/inscription.html" class="btn-inscription">Inscription</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="./images/Iimageacceuil.jpg" alt="Bibliothèque ancienne" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+            <div class="hero-vignette-top"></div>
+            <div class="hero-vignette-bottom"></div>
+        </div>
+
+        <div class="hero-content">
+            <p class="hero-tagline">✦ VOTRE PROCHAINE AVENTURE COMMENCE ICI ✦</p>
+
+            <h1 class="hero-title">
+                <span class="hero-title-line">Des pages qui</span>
+                <span class="hero-title-line">traversent</span>
+                <span class="hero-title-line script">. le temps</span>
+            </h1>
+
+            <p class="hero-description">
+                <em>Chaque livre est une porte ouverte vers un autre monde.</em>
+            </p>
+
+            <p class="hero-subdescription">
+                ✿ Laissez-vous emporter par la magie des mots.
+            </p>
+
+            <a href="./content/livres.html" class="hero-cta">
+                <span>Découvrir les Livres</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+
+        <div class="candle candle-1">
+            <div class="candle-flame"></div>
+            <div class="candle-body"></div>
+        </div>
+        <div class="candle candle-2">
+            <div class="candle-flame"></div>
+            <div class="candle-body"></div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION: LES PLUS AIMÉS ==================== -->
+    <section class="section-favorites" id="favoris">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label"> Sélection ✦</span>
+                <h2 class="section-title">Les plus aimés</h2>
+                <p class="section-subtitle">Les ouvrages préférés de nos lecteurs passionnés</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="books-showcase">
+                <!-- Livre 1 -->
+                <article class="book-card-featured">
+                    <div class="book-card-image">
+                        <img src="./images/miserables.jpg" alt="Les Miserables">
+                        <div class="book-card-overlay">
+                            <div class="book-quick-actions">
+                                <button class="quick-btn" title="Aperçu rapide">👁</button>
+                                <button class="quick-btn" title="Ajouter aux favoris">♡</button>
+                            </div>
+                        </div>
+                        <span class="book-badge-best">★ Best-seller</span>
+                    </div>
+                    <div class="book-card-content">
+                        <span class="book-genre">Littérature</span>
+                        <h3 class="book-card-title">Les Miserables</h3>
+                        <p class="book-card-author">Victor Hugo</p>
+                        <div class="book-card-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(128 avis)</span>
+                        </div>
+                        <div class="book-card-price">
+                            <span class="price-current">5 280DA</span>
+                        </div>
+                        
+                    </div>
+                </article>
+
+                <!-- Livre 2 -->
+                <article class="book-card-featured">
+                    <div class="book-card-image">
+                        <img src="./images/madamBovary.jpg" alt="Madame Bovary">
+                        <div class="book-card-overlay">
+                            <div class="book-quick-actions">
+                                <button class="quick-btn" title="Aperçu rapide">👁</button>
+                                <button class="quick-btn" title="Ajouter aux favoris">♡</button>
+                            </div>
+                        </div>
+                        <span class="book-badge-new">Nouveau</span>
+                    </div>
+                    <div class="book-card-content">
+                        <span class="book-genre">Littérature</span>
+                        <h3 class="book-card-title">Madame Bovary</h3>
+                        <p class="book-card-author">Gustave Flaubert</p>
+                        <div class="book-card-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(95 avis)</span>
+                        </div>
+                        <div class="book-card-price">
+                            <span class="price-current">1 5000DA</span>
+                        </div>
+                        
+                    </div>
+                </article>
+
+                <!-- Livre 3 -->
+                <article class="book-card-featured">
+                    <div class="book-card-image">
+                        <img src="./images/histoiredel'art.jpg" alt="Histoire de l'art">
+                        <div class="book-card-overlay">
+                            <div class="book-quick-actions">
+                                <button class="quick-btn" title="Aperçu rapide">👁</button>
+                                <button class="quick-btn" title="Ajouter aux favoris">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card-content">
+                        <span class="book-genre">Art</span>
+                        <h3 class="book-card-title">Histoire de l'art</h3>
+                        <p class="book-card-author">E.H.Gombrich</p>
+                        <div class="book-card-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(67 avis)</span>
+                        </div>
+                        <div class="book-card-price">
+                            <span class="price-current">4500DA</span>
+                            <span class="price-old">4 994DA</span>
+                        </div>
+                       
+                    </div>
+                </article>
+
+                <!-- Livre 4 -->
+                <article class="book-card-featured">
+                    <div class="book-card-image">
+                        <img src="./images/origineDesEspeces.jpg" alt="L'origine des espéces">
+                        <div class="book-card-overlay">
+                            <div class="book-quick-actions">
+                                <button class="quick-btn" title="Aperçu rapide">👁</button>
+                                <button class="quick-btn" title="Ajouter aux favoris">♡</button>
+                            </div>
+                        </div>
+                        <span class="book-badge-promo">-25%</span>
+                    </div>
+                    <div class="book-card-content">
+                        <span class="book-genre">Sciences</span>
+                        <h3 class="book-card-title">L'origine des espéces</h3>
+                        <p class="book-card-author">Charles Darwin</p>
+                        <div class="book-card-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(203 avis)</span>
+                        </div>
+                        <div class="book-card-price">
+                            <span class="price-current">2 500DA</span>
+                            <span class="price-old">2 965DA</span>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-cta">
+                <a href="./content/livres.html" class="btn-view-all">
+                    Voir tous les livres
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION: CITATION / BANDEAU ==================== -->
+    <section class="section-quote">
+        <div class="quote-overlay"></div>
+        <div class="container">
+            <blockquote class="quote-content">
+                <svg class="quote-mark" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                </svg>
+                <p class="quote-text">Un livre est un jardin que l'on porte dans sa poche.</p>
+                <cite class="quote-author">— Proverbe arabe</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION: NOUVEAUTÉS ==================== -->
+    <section class="section-new">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">✦ Fraîchement arrivés ✦</span>
+                <h2 class="section-title">Nouveautés</h2>
+                <p class="section-subtitle">Les dernières parutions à ne pas manquer</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="new-books-scroll">
+                <button class="scroll-btn scroll-btn-left" aria-label="Précédent">‹</button>
+                <div class="new-books-track" id="newBooksTrack">
+                    <!-- Injecté par JS -->
+                </div>
+                <button class="scroll-btn scroll-btn-right" aria-label="Suivant">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <h2>LIVRARIA</h2>
+                        <span>Histoires de tous les temps</span>
+                    </a>
+                    <p class="footer-desc">
+                        Votre librairie en ligne dédiée aux passionnés de lecture.
+                        Depuis 2020, nous sélectionnons les meilleurs ouvrages pour vous.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12.017 24c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641 0 12.017 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="./content/livres.html">Catalogue</a></li>
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Best-sellers</a></li>
+                        <li><a href="#">Promotions</a></li>
+                        <li><a href="#">Blog Littéraire</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livraison & Retours</a></li>
+                        <li><a href="#">Programme fidélité</a></li>
+                        <li><a href="#">Cartes cadeaux</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>123 Rue des Livres, 75001 ALGER</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+213 5 23 45 67 89</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>contact@livraria.dz</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Sam-Jeu : 9h-19h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 LIVRARIA. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6"></path>
+        </svg>
+    </button>
+
+    <script src="./javascript/acceuil.js"></script>
+</body>
+</html>

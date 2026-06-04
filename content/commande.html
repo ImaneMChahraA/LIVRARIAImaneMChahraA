@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande - Livraria</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/commande.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo"><h1>Livraria</h1>
+                <span class="tagline">HISTOIRES DE TOUS LES TEMPS</span>
+            </a>
+            <nav class="main-nav">
+                <a href="livres.html">Nos Livres</a>
+                <button class="cart-btn" onclick="window.location.href='commande.html'">
+                    🛒 Panier <span class="cart-count">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Finaliser votre commande</h1>
+            <p>Merci de remplir le formulaire ci-dessous</p>
+        </div>
+
+        <div class="order-grid">
+            <section class="order-form-section">
+                <h2>Vos informations</h2>
+                <form id="orderForm" class="order-form">
+                    <div class="form-group">
+                        <label for="nom">Nom complet *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telephone">Téléphone *</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adresse">Adresse de livraison *</label>
+                        <textarea id="adresse" name="adresse" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ville">Ville *</label>
+                            <input type="text" id="ville" name="ville" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="wilaya">Wilaya *</label>
+                            <input type="text" id="wilaya" name="wilaya" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="codePostal">Code postal</label>
+                            <input type="text" id="codePostal" name="codePostal">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Notes de livraison (optionnel)</label>
+                        <textarea id="notes" name="notes" rows="2" placeholder="Instructions particulières..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment">Mode de paiement *</label>
+                        <select id="payment" name="payment" required>
+                            <option value="">Choisissez un mode de paiement</option>
+                            <option value="cash">Paiement à la livraison</option>
+                            <option value="ccp">CCP / BaridiMob</option>
+                            <option value="virement">Virement bancaire</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Confirmer la commande
+                    </button>
+                </form>
+            </section>
+
+            <aside class="order-summary">
+                <h2>Récapitulatif</h2>
+                <div id="cartItems" class="cart-items">
+                    <!-- Les articles seront injectés ici par JavaScript -->
+                </div>
+                
+                <div class="cart-total">
+                    <div class="total-line">
+                        <span>Sous-total</span>
+                        <span id="subtotal">0,00 DA</span>
+                    </div>
+                    <div class="total-line">
+                        <span>Livraison</span>
+                        <span id="shipping">Gratuite</span>
+                    </div>
+                    <div class="total-line total">
+                        <span>Total</span>
+                        <span id="totalAmount">0,00 DA</span>
+                    </div>
+                </div>
+
+                <div class="cart-info">
+                    <p>📦 Livraison gratuite pour toute l'Algérie</p>
+                    <p>⏱️ Délai: 3-5 jours ouvrables</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Livraria - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/livres.js"></script>
+    <script src="../javascript/commande.js"></script>
+</body>
+</html>
